@@ -1,6 +1,6 @@
 """
 Title: Checks if number is "happy"
-Description: The squares of the individual digits will ulitimatly lead to 1
+Description: The sum of the squares of the individual digits will ulitimatly lead to 1
 Author: akashroshan135
 Date: 22-Jan-2021
 """
@@ -8,17 +8,23 @@ Date: 22-Jan-2021
 num = int(input("Enter a number : "))
 n = num
 sum = 0
-# loops if the number has more than 2 digits
-while num > 9:
+# loops until the number is 1 or 4. 4 results in an infinite loop
+while(n != 1 and n != 4):
+#while n != 1:
 	sum = 0
 	# obtains the sum of all the squares of each individual digit
-	while num > 0:
-		digit = num % 10
+	while n > 0:
+		# obtain lsb
+		digit = n % 10
+		# adds the square of the lsb to the sum
 		sum += (digit ** 2)
-		num //= 10
-	num = sum
+		# lsb is discraded
+		n //= 10
+	#print(sum)
+	# assigned to repeat with the new sum
+	n = sum
 
 if sum == 1:
-	print(n, "is a happy number")
+	print(num, "is a happy number")
 else:
-	print(n, "is not a happy number")
+	print(num, "is not a happy number")
