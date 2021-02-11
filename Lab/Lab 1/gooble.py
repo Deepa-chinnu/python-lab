@@ -1,5 +1,5 @@
 """
-Program 1
+Program 2
 Title: Google
 Description:
 	Write a function "GoogleLove()" that takes a list and returns a string . 
