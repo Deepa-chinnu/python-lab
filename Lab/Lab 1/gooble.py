@@ -32,7 +32,7 @@ def GoogleLove(numbers):
 		elif numbers[i] == '6':
 			string.append('.')
 		elif numbers[i] == '7':
-			string[0] = string[0].upper()
+			string[0] = string[0].swapcase()
 		elif numbers[i] == '8':
 			string.reverse()
 		else:
