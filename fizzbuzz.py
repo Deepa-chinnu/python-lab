@@ -1,6 +1,6 @@
 words = {
-	3:"Fizz", 
-	5:"Buzz",
+	3 : "Fizz", 
+	5 : "Buzz",
 }
 
 for i in range(1, 101):
@@ -11,3 +11,4 @@ for i in range(1, 101):
 	if output == "":
 		output = i
 	print(output)
+	

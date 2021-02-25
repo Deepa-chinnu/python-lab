@@ -64,11 +64,10 @@ morse = {
 	'-' : 'dah-di-di-di-di-dah',
 	'×' : 'dah-di-di-dah',
 	'+' : 'di-dah-di-dah-dit',
-	'"':  'di-dah-di-di-dah-dit',
+	'"' : 'di-dah-di-di-dah-dit',
 	'?' : 'di-di-dah-dah-di-dit',
 	'/' : 'dah-di-di-dah-dit',
 	# '%' : 'dah-dah-dah-dah-dah dah-di-di-dah-dit dah-dah-dah-dah-dah', # * prints 0/0
-
 }
 
 def decodeMorse(str):
